@@ -9,9 +9,8 @@ favorite_languages = {
 
 poll_friends = ['edward', 'sarah', 'maria', 'phil', 'jen', 'erin']
 
-# VOCÊ ESTAVA AQUI!!!!
-# for friend in poll_friends:
-#   if friend not in favorite_languages.keys():
-        
-
-
+for friend in poll_friends:
+    if friend not in favorite_languages.keys():
+      print("Hey, " + friend.title() + " what are you waiting for? Send your answer to our poll!!!")
+    else:
+        print("Thanks for helping our poll, " + friend.title() + "!") 
