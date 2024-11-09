@@ -1,18 +1,20 @@
-# Exercises 6.1, 6.2, 6.7, 6.8
+# Exercises 6.1, 6.2, 6.7, 6.8, 6.11 and 6.12
 
 party_characters = {
-    'Rodrigo':'Enarius',
-    'Goes': 'GM',
-    'Kaio': 'Vermax',
-    'Luiz': 'Vermut'
+    'Rodrigo':['Enarius','RosGalthar'],
+    'Goes': ['GM','Hofio'],
+    'Kaio': ['Vermax','Tam'],
+    'Luiz': ['Vermut','Santo Ernesto']
     }
+
+for character in party_characters.items():
+    print(character)
 
 character_1 = {
     'name':"Geslav",
     'race':"Elven",
     'age':548
     }
-# print(character_1['age'])
 
 character_2 =  {
     'name':"Mikha",
@@ -26,11 +28,12 @@ character_3 =  {
     'age': 18
     }
 
-"""
+
 my_characters = (character_1, character_2, character_3)
+'''
 for character in my_characters:
     print(character)
-"""
+'''
 
 
 guild_rpg = {
@@ -42,7 +45,8 @@ guild_rpg = {
 'hiashi_cabecao': {'race':'iskoro','total_xp':1000}
             }
 
-"""
+'''
 for character, character_info in guild_rpg.items():
     print(character + "\n" + str(character_info) + "\n")
-"""
+'''
+
