@@ -1,19 +1,19 @@
-# Exercise 8.7 and 8.8
+# Exercise 8.9, 8.10 and 8.11
 
 def show_magicians(magicians):
     for magician in magicians:
-        print(magician)
-    return magicians
+        print(magician  + "\n")
+    print("\n")
 
 def make_great(magicians):
     for magician in magicians:
-        magician = "The Great " + str(magician) 
-        print(magician + "\n")
-    return magicians
+        magicians.remove(magician)
+        magicians.insert(0, "The great " + magician)
+    print("\n")
 
 
-active = True
 magicians = []
+active = True
 
 while active == True:
     answer = input("Would like to create a new magician? y - yes / any - no \n")
@@ -26,10 +26,10 @@ while active == True:
     else:
         active = False
 
-show_magicians(magicians[:])
+show_magicians(magicians)
 
-magicians_copy = magicians[:]
-make_great(magicians_copy[:])
+make_great(magicians[:])
+show_magicians(magicians)
 
-print("Original list"+ str(magicians) + "\n")
-print("Copy list"+ str(magicians_copy) + "\n")
+make_great(magicians)
+show_magicians(magicians)
