@@ -1,15 +1,14 @@
 # Exercise 8.12
 
 def make_sandwich(*ingredients):
+    print("Did you request a sandwich with: ")
+    for ingredient in ingredients:
+        print("- " + ingredient)
 
 
-active = True
-all_albuns = []
+make_sandwich('Ham', 'Cheese', 'Black olive', 'Cream Cheese')
 
-while active == True:
-    answer = input("Would like to insert more ingredients in your sandwich? y - yes / any - no \n")
-    if answer == 'y':
-        ingredients = ingredients + input("Write the ingredient:* \n")
-    else:
-        active = False 
+make_sandwich('Chicken', 'Carrot', 'Mayo')
+
+make_sandwich('Egg', 'Cheese', 'Cream Cheese')
 
