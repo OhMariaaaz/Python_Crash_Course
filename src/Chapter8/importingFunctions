@@ -1,0 +1,15 @@
+# Exercise 8.15, 8.16 and 8.17
+from signUp import *
+
+users = {}
+users['user 1'] = build_profile('Maria', 
+        'Gomes', username= 'OhMariaaaz', country='Brazil', age=21, 
+        birthday='24/04/2003')
+users['user 2'] = build_profile('Mateus', 
+        'Chaves', username= 'Mateuzito', age=12, 
+        birthday='17/11/2012')
+users['user 3'] = build_profile('Miguel', 
+        'Chaves', username= 'Muigueteu', favorite_color= 'yellow', 
+        age= 8)
+
+print(users)
