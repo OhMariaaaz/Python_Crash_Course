@@ -1,3 +1,5 @@
+# Note from page
+
 class Dog():
     """A simple attempt to model a dog."""
 
@@ -13,3 +15,4 @@ class Dog():
     def roll_over(self):
         """Simulate a dog rolling over in response to a command."""
         print(self.name.title() + " rolled over!")
+
