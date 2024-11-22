@@ -26,3 +26,12 @@ class User():
     def reset_login_attempts(self):
         self.login_attempts = 0
 
+class Admin(User):
+
+    def __init__(self, username, first_name, last_name, country, about_me, *privilegies):
+        super().__init__(username, first_name, last_name, country, about_me)
+        self.privilegies = privilegies
+
+    def show_privilegies():
+
+

@@ -1,4 +1,4 @@
-# Note from page
+# Note from page 207
 
 class Dog():
     """A simple attempt to model a dog."""
